@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Project - Pengembang Aplikasi dan Solusi IT</title>
+    <!-- Tailwind CLI -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CDN Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- CDN Alpine JS -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <!-- CDN Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* border: 1px solid dimgray; */
+      }
+    </style>
+  </head>
+
+  <body class="dark:bg-slate-900" style="font-family: 'Inter', sans-serif">
+    <!-- Navbar -->
+    <div x-data="{ open: false }">
+      <div class="flex justify-between p-4 md:p-8 lg:p-10">
+        <a href="#" class="flex items-center justify-center space-x-2">
+          <div
+            class="mx-1 flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 50 50"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+            >
+              <g transform="matrix(1.05263,0,0,1.08696,-2.63158,0)">
+                <rect
+                  x="2.5"
+                  y="0"
+                  width="47.5"
+                  height="46"
+                  style="fill: rgb(249, 50, 2)"
+                />
+              </g>
+              <path
+                d="M26,30L17,30L17,38L26,38L26,30ZM43,17C43,15.674 42.473,14.402 41.536,13.464C40.598,12.527 39.326,12 38,12C35.928,12 34,12 34,12L34,30L38,30C39.326,30 40.598,29.473 41.536,28.536C42.473,27.598 43,26.326 43,25C43,22.505 43,19.495 43,17Z"
+                style="fill: rgb(20, 20, 50)"
+              />
+              <path
+                d="M8,22L8,38L17,38L17,30L34,30L34,22L8,22ZM34,12L8,12L8,20L34,20L34,12Z"
+                style="fill: rgb(235, 235, 235)"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-xl font-bold italic text-slate-900 dark:text-gray-50"
+          >
+            futureproject
+          </div>
+        </a>
+        <!-- Menu Desktop -->
+        <ul
+          class="hidden items-center font-semibold text-blue-900 dark:text-blue-400 md:flex md:space-x-6 md:text-sm"
+        >
+          <a href="#">
+            <li class="hover:text-blue-400">Services</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-blue-400">Portofolios</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-blue-400">About</li>
+          </a>
+        </ul>
+        <!-- Menu Mobile -->
+        <button
+          class="h-auto w-10 px-2 opacity-90 md:hidden"
+          x-on:click="open = ! open"
+        >
+          <div x-show="!open">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 173 57"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+            >
+              <g transform="matrix(1,0,0,1,-13.75,-71.9318)">
+                <g id="menu-regular" transform="matrix(0.8,0,0,0.8,20,14.1818)">
+                  <g transform="matrix(1.09091,0,0,1.09091,-54.5455,-7.27273)">
+                    <path
+                      d="M75,72.839C57.25,72.839 42.839,87.25 42.839,105C42.839,122.75 57.25,137.161 75,137.161C92.75,137.161 107.161,122.75 107.161,105C107.161,87.25 92.75,72.839 75,72.839ZM75,87.161C84.845,87.161 92.839,95.155 92.839,105C92.839,114.845 84.845,122.839 75,122.839C65.155,122.839 57.161,114.845 57.161,105C57.161,95.155 65.155,87.161 75,87.161Z"
+                      style="fill: rgb(249, 50, 2)"
+                    />
+                  </g>
+                  <g transform="matrix(1.09091,0,0,1.09091,18.1818,-7.27273)">
+                    <path
+                      d="M75,72.839C57.25,72.839 42.839,87.25 42.839,105C42.839,122.75 57.25,137.161 75,137.161C92.75,137.161 107.161,122.75 107.161,105C107.161,87.25 92.75,72.839 75,72.839ZM75,87.161C84.845,87.161 92.839,95.155 92.839,105C92.839,114.845 84.845,122.839 75,122.839C65.155,122.839 57.161,114.845 57.161,105C57.161,95.155 65.155,87.161 75,87.161Z"
+                      style="fill: rgb(20, 20, 50)"
+                    />
+                  </g>
+                  <g transform="matrix(1.09091,0,0,1.09091,90.9091,-7.27273)">
+                    <path
+                      d="M75,72.839C57.25,72.839 42.839,87.25 42.839,105C42.839,122.75 57.25,137.161 75,137.161C92.75,137.161 107.161,122.75 107.161,105C107.161,87.25 92.75,72.839 75,72.839ZM75,87.161C84.845,87.161 92.839,95.155 92.839,105C92.839,114.845 84.845,122.839 75,122.839C65.155,122.839 57.161,114.845 57.161,105C57.161,95.155 65.155,87.161 75,87.161Z"
+                      style="fill: rgb(20, 20, 50)"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div x-show="open">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 173 173"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xml:space="preserve"
+              xmlns:serif="http://www.serif.com/"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+            >
+              <g transform="matrix(1,0,0,1,-13.702,-13.702)">
+                <path
+                  id="x-reguler"
+                  d="M100,62.877L58.562,21.438C48.31,11.187 31.69,11.187 21.438,21.438C21.438,21.438 21.438,21.438 21.438,21.438C11.187,31.69 11.187,48.31 21.438,58.562C21.438,58.562 62.877,100 62.877,100C62.877,100 21.356,141.52 21.356,141.52C11.15,151.726 11.15,168.274 21.356,178.48C21.357,178.48 21.357,178.48 21.358,178.481C31.654,188.777 48.346,188.777 58.642,178.481C58.642,178.481 100,137.123 100,137.123C100,137.123 141.438,178.562 141.438,178.562C151.69,188.813 168.31,188.813 178.562,178.562C178.562,178.562 178.562,178.562 178.562,178.562C188.813,168.31 188.813,151.69 178.562,141.438C178.562,141.438 137.123,100 137.123,100C137.123,100 178.481,58.642 178.481,58.642C188.777,48.346 188.777,31.654 178.481,21.358C178.48,21.357 178.48,21.357 178.48,21.356C168.274,11.15 151.726,11.15 141.52,21.356L100,62.877ZM95.581,76.135C98.021,78.576 101.979,78.576 104.419,76.135L150.359,30.195C155.684,24.871 164.316,24.871 169.641,30.195C169.641,30.195 169.642,30.197 169.642,30.197C175.056,35.611 175.056,44.389 169.642,49.803C169.642,49.803 123.865,95.581 123.865,95.581C121.424,98.021 121.424,101.979 123.865,104.419L169.723,150.277C175.092,155.647 175.092,164.353 169.723,169.723C169.723,169.723 169.723,169.723 169.723,169.723C164.353,175.092 155.647,175.092 150.277,169.723C150.277,169.723 104.419,123.865 104.419,123.865C101.979,121.424 98.021,121.424 95.581,123.865L49.803,169.642C44.389,175.056 35.611,175.056 30.197,169.642C30.197,169.642 30.195,169.641 30.195,169.641C24.871,164.316 24.871,155.684 30.195,150.359C30.195,150.359 76.135,104.419 76.135,104.419C78.576,101.979 78.576,98.021 76.135,95.581L30.277,49.723C24.908,44.353 24.908,35.647 30.277,30.277C30.277,30.277 30.277,30.277 30.277,30.277C35.647,24.908 44.353,24.908 49.723,30.277C49.723,30.277 95.581,76.135 95.581,76.135Z"
+                  style="fill: rgb(249, 50, 2)"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        class="absolute h-screen w-full bg-white md:hidden"
+        x-show="open"
+        style="display: none"
+      >
+        <ul
+          class="mx-6 my-4 flex flex-col items-center justify-center rounded-xl text-sm font-semibold text-slate-900 dark:text-blue-400"
+        >
+          <li class="flex w-full items-center space-x-2 px-4 py-4">
+            <div>Services</div>
+          </li>
+          <li class="flex w-full items-center space-x-2 px-4 py-4">
+            <div>Portofolios</div>
+          </li>
+          <li class="flex w-full items-center space-x-2 px-4 py-4">
+            <div>About</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div
+      class="flex flex-col justify-center space-y-2 overflow-hidden p-16 px-0 text-center md:space-y-4 md:px-8 lg:flex-row"
+    >
+      <img
+        src="./images/grid-dot.png"
+        alt=""
+        class="absolute top-0 -z-10 h-screen w-auto object-cover opacity-20 md:opacity-10"
+      />
+      <div class="flex justify-center lg:w-6/12">
+        <img
+          src="./images/sketch-whyus2.png"
+          alt=""
+          class="flex w-full object-cover px-4 md:w-8/12 lg:w-11/12"
+        />
+      </div>
+      <div class="flex flex-col space-y-2 lg:mr-28 lg:w-6/12 lg:justify-center">
+        <h1
+          class="flex justify-center text-4xl font-extrabold text-gray-800 md:text-5xl md:tracking-tighter lg:text-6xl lg:tracking-tight"
+        >
+          One of the best<br class="md:hidden" />
+          for <br class="hidden md:inline" />Development
+          <br class="md:hidden" />
+          & your IT Solution.
+        </h1>
+        <p class="py-4 text-lg text-gray-500">
+          A team that can meet your various needs with a
+          <span class="text-xl font-semibold text-orange-500"
+            >simple design</span
+          >,<br class="hidden md:inline" />
+          and
+          <span class="text-xl font-semibold text-orange-500"
+            >reliable program</span
+          >
+        </p>
+        <a href="#" class="flex justify-center">
+          <div
+            class="flex justify-center rounded-xl bg-orange-600 px-12 py-3 font-semibold text-gray-50 md:w-2/6 lg:w-4/12"
+          >
+            Contact Us
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
